@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <h2>You have successfully tested the register and login routes. Now you are logged in.</h2>
                 </div>
             </div>
         </div>

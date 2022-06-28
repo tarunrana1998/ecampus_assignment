@@ -26,7 +26,13 @@ Route::get('sql-query', function () {
 });
 
 Route::get('explode-string', function () {
-    return view('table');
+    $str = "Edutra@Technologies@Noida,Noida@15@Edutra,15@Noida@Edutra";
+    $row_arr = explode(',',$str);
+    $arr = [];
+    foreach($row_arr as $r){
+        $arr [ ] = explode('@',$r);
+    }
+    return view('table', compact('arr'));
 });
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -25,9 +25,55 @@
         </style>
     </head>
     <body class="container my-5">
-        <div>
-            {{-- <h2>Question 2</h2> --}}
-            <a href="{{ url('sorting') }}">Sorting Algo </a>
-        </div>
+
     </body>
-</html>
+</html> --}}
+
+@extends('layouts.app')
+
+@section('content')
+    <div class="container my-5">
+        <div class="text-center">
+            <h1>E_Campus Assignment</h1>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <h3>Question 1</h2>
+            </div>
+            <div class="col">
+                The Auth routes have been implemnted . You can check by connecting to database and check all the routes. <br>
+                The session time have been set to 10 min from config.
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col">
+                <h3>Question 2</h2>
+            </div>
+            <div class="col">
+                <a href="{{ url('sorting') }}">Sorting Algo </a>
+
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <h3>Question 3</h2>
+            </div>
+            <div class="col">
+                <a href="{{ url('sql-query') }}">Click here for SQL query </a>
+
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <h3>Question 4</h2>
+            </div>
+            <div class="col">
+                <a href="{{ url('explode-string') }}">Explode string into Table</a>
+
+            </div>
+        </div>
+
+
+    </div>
+@endsection
